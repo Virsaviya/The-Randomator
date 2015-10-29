@@ -1,0 +1,89 @@
+body {
+	font-family: 'Trebuchet MS' sans-serif;
+	text-align: center;
+	background-color: #444444;
+	color: #8cb9e2;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+img {
+	height: auto;
+	width: 160px;
+	text-align: left;
+	position: fixed;
+  top: 1%;
+  left: 1%;
+  z-index: 999999;
+}
+
+div#logo img {
+	width: 272px;
+	padding-top: 109px; 
+	padding-bottom: 22px;
+}
+
+p {
+	font-size: 16px;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 0.5em;
+	width: 100px;
+	background-color: #606060;
+}
+#makeList {
+	display: inline-block;
+}
+
+#randomName {
+	display: inline-block;
+}
+.subscript {
+	font-size: 11px;
+	margin-top: 3px;
+}
+
+#name {
+	width: 200px;
+	height: 20px;
+	margin-bottom: 1px;
+}
+
+#inputPerTeam {
+	width: 50px;
+	height: 20px;
+}
+.btn {
+	cursor: pointer;
+	cursor: hand;
+	display: inline-block;
+	padding: 3px 8px 3px 8px;
+	background-color: #a2b2c1;
+	color: #394047;
+	height: 20px;
+	border-radius: 4px;
+	margin-bottom: 3px;
+}
+
+.eachTeam {
+	border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+	width: 100px;
+	min-height: 100px;
+	text-align: center;
+	display: inline-block;
+	background-color: #606060;
+}
+#perTeam {
+	display: inline-block;
+}
+
+.warning {
+	color: #ffbaba;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Random Selector</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<img src="logo.png">
+	<div>
+		<h1>The Randomator!</h1>
+		<h3>Pick a random name from a list you provide.  Randomly assign people to teams.<h3> 
+	</div>
+	<div id="List">
+		<div id="Names">
+			<p>Add names to the list here:</p>
+				<div>
+					<input type="text" id="name">
+					<div id="addNames" class="btn">add names to list</div>
+					<div id="clearList" class="btn">clear list</div>
+					<p class="subscript">You can add more than one name at a time by separating them with commas.</p>
+				</div>
+		</div>
+		<div id="makeList">
+		</div>
+	</div>
+	<div id="select">
+		<div id="onePerson">
+			<p>Would you like to randomly pick one person?<p>
+			<p id="getName" class="btn">Get a random name</div>
+			<div id='randomName'>
+			</div>
+		</div>
+		<div id="makeTeams">
+			<p>Or would you rather make teams?</p>
+			<p>How many people would you like per team?</p>
+			<div id="perTeam">
+				<input type="number" id="inputPerTeam" min=2>
+				<div id="teamsSubmit" class="btn">submit</div>
+				<div id="clearTeams" class="btn">clear teams</div>
+			</div>
+			<div id="teams">
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="main.js"></script>
+</body>
+</html>
