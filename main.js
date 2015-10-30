@@ -4,7 +4,7 @@ var namesList = [];
 document.getElementById('addNames').addEventListener('click', submitName);
 var nameInput = document.getElementById('name');
 nameInput.addEventListener('keypress', nameKeyPressed);
-nameInput.focus();
+// nameInput.focus();
 
 function nameKeyPressed() {
 	if (event.charCode === 13) {
