@@ -2,9 +2,8 @@ var namesList = [];
 
 // make list
 document.getElementById('addNames').addEventListener('click', submitName);
-var nameInput = document.getElementById('name');
+var nameInput = document.getElementById('input');
 nameInput.addEventListener('keypress', nameKeyPressed);
-// nameInput.focus();
 
 function nameKeyPressed() {
 	if (event.charCode === 13) {
@@ -30,7 +29,7 @@ function submitName() {
 		namesList.forEach(function (name) {
 			div = document.createElement('div');
 			div.textContent = name;
-			div.setAttribute('class', 'box');
+			div.setAttribute('class', 'box col-md-1 col-xs-4');
 			parentDiv.appendChild(div);
 		});
 		document.getElementById('makeList').appendChild(parentDiv);
@@ -59,23 +58,26 @@ function onePerson() {
 		var randomPerson = namesList[randomIdx(namesList)];
 		var div = document.createElement('div');
 		div.textContent = randomPerson;
-		div.setAttribute('class', 'box');
+		div.setAttribute('class', 'oneName');
 		document.getElementById('randomName').appendChild(div);
 	} else {
-		var div = document.createElement('div');
-		div.textContent = "please add people to the list first";
-		div.setAttribute('class', 'warning subscript');
-		document.getElementById('randomName').appendChild(div);
-		nameInput.focus();
+		if (document.getElementById('randomName').innerHTML === '') {
+			var div = document.createElement('div');
+			div.textContent = "please add people to the list first";
+			div.setAttribute('class', 'warning subscript');
+			document.getElementById('randomName').appendChild(div);
+			nameInput.focus();
+		}		
 	}
 };
 
 // make random teams
-document.getElementById('teamsSubmit').addEventListener('click', makeTeams);
+document.getElementById('submitTeams').addEventListener('click', makeTeams);
 var inputPerTeam = document.getElementById('inputPerTeam');
+
 function makeTeams(perTeam) {
 	var listForTeams = [].concat(namesList);
-	var perTeam = inputPerTeam.value;
+	var perTeam = parseInt(inputPerTeam.value);
 	var teams = [];
 	document.getElementById('teams').innerHTML = "";
 	for (var i = 0; listForTeams.length > 0; i++) {
@@ -83,12 +85,9 @@ function makeTeams(perTeam) {
 		for (var j = 0; j < perTeam; j++) {
 			teams = teams.concat(listForTeams.splice(randomIdx(listForTeams), 1));
 		}
-		var div, 
-// parentDiv = document.createElement('div');
-			div = document.createElement('div');
+		var div = document.createElement('div');
 			div.textContent = teams.join(', ');
 			div.setAttribute('class', 'eachTeam');
-//		div.appendChild(parentDiv);
 		document.getElementById('teams').appendChild(div);
 	}	
 	inputPerTeam.value = '';

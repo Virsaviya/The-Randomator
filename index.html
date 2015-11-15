@@ -1,50 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-	<meta charset="UTF-8">
-	<title>Random Selector</title>
-	<link rel="stylesheet" href="style.css">
+	<meta charset='UTF-8'>
+	<title>The Randomator</title>
+	<link href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/darkly/bootstrap.min.css' rel='stylesheet' integrity='sha256-IsefKVCcMUlgpXQgIMRsqbIqC6aP153JkybxTa7W7/8= sha512-mCNEsmR1i3vWAq8hnHfbCCpc6V5fP9t0N1fEZ1wgEPF/IKteFOYZ2uk7ApzMXkT71sDJ00f9+rVMyMyBFwsaQg==' crossorigin='anonymous'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+	<link rel='stylesheet' href='style.css'>
 </head>
 <body>
-	<img src="logo.png">
-	<div>
-		<h1>The Randomator!</h1>
-		<h3>Pick a random name from a list you provide.  Randomly assign people to teams.<h3> 
-	</div>
-	<div id="List">
-		<div id="Names">
-			<p>Add names to the list here:</p>
-				<div>
-					<input type="text" id="name" autofocus>
-					<div id="addNames" class="btn">add names to list</div>
-					<div id="clearList" class="btn">clear list</div>
-					<p class="subscript">You can add more than one name at a time by separating them with commas.</p>
+	<div class="container">
+		<div class='jumbotron'>
+			<h1>The Randomator!</h1>
+			<h3>Pick a random name from a list you provide.  <br> Randomly assign people to teams.<h3> 
+		</div>
+		<div id='list'>
+			<div id='names' class='row'>
+				<div class='col-sm-12'>Add names to the list</div>
+			</div>
+			<div class="row">
+				<div class='col-sm-offset-4' id='name'>
+					<textarea type='text' id='input' class='col-sm-12' autofocus></textarea>
 				</div>
-		</div>
-		<div id="makeList">
-		</div>
-	</div>
-	<div id="select">
-		<div id="onePerson">
-			<p>Would you like to randomly pick one person?<p>
-			<p id="getName" class="btn">Get a random name</div>
-			<div id='randomName'>
+				<div class='subscript col-sm-12'>Add more than one name at a time by separating them with commas.</div>			
+			</div>
+			<div class="row">
+				<div class="row col-sm-4 col-sm-offset-4">
+					<div id='addNames' class='btn btn-responsive btn-info col-sm-5 col-sm-offset-1'>add</div>
+					<div id='clearList' class='btn btn-responsive btn-info col-sm-5'>clear</div>
+				</div>
 			</div>
 		</div>
-		<div id="makeTeams">
-			<p>Or would you rather make teams?</p>
-			<p>How many people would you like per team?</p>
-			<div id="perTeam">
-				<input type="number" id="inputPerTeam" min=2>
-				<div id="teamsSubmit" class="btn">submit</div>
-				<div id="clearTeams" class="btn">clear teams</div>
-			</div>
-			<div id="teams">
-			</div>
+		<div class='row'>
+			<div id="makeList" class='col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4'></div>
 		</div>
-	</div>
-	
+		<div id='select' class='row'>
+			<div id='onePerson'class='col-sm-6 col-xs-12'>
+				<div class="well">
+					<h3>Pick a random person</h3>
+					<div id='getName' class='btn btn-responsive btn-info'>Get a random name</div>
+					<div id='randomName'></div>
+				</div>
+			</div>
+			<div id='makeTeams' class='col-sm-6 col-xs-12'>
+				<div class="well">
 
-	<script src="main.js"></script>
+					<div class="row">
+						<h3 class='col-xs-12'>Assign random teams</h3>
+						<div class="col-xs-12">
+							<div>Make teams of
+							<input type='number' id='inputPerTeam' min=1>	people.</div>
+						</div>
+						<div id='perTeam' class='col-xs-12'>
+							<div id='submitTeams' class='btn btn-responsive btn-info'>submit</div>
+							<div id='clearTeams' class='btn btn-responsive btn-info'>clear teams</div>
+						</div>
+						<div id='teams'></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<i class='fa fa-linkedin-square'></i>
+
+	</footer>
+
+	<script src='main.js'></script>
 </body>
 </html>
