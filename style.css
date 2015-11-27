@@ -5,11 +5,6 @@ body {
 	color: #8cb9e2;
 	font-size: 16px;	
 }
-div {
-/*	margin-left: auto;
-	margin-right: auto;*/
-	/*border: 1px solid red;*/
-}
 
 #name {
 	display: inline-block;
@@ -19,7 +14,6 @@ div {
 #input {
 	width: 300px;
 	height: 100px;
-	/*margin: 10px auto 1px auto;*/
 	padding: 5px;
 }
 
@@ -36,17 +30,18 @@ div {
 	min-height: 500px;
 	border-radius: 10px;
 }
+
 #inputPerTeam {
 	text-align: center;
 	width: 40px;
 	height: 20px;
 }
+
 #select {
 	margin-top: 20px;
 }
 
 .box {
-  /*border: 1px solid black;*/
   padding: 5px;
   margin: 9px;
 	width: 100px;
@@ -55,7 +50,6 @@ div {
 }
 
 .eachTeam {
-	/*border: 1px solid black;*/
 	border-radius: 5px;
   padding: 10px;
   margin: 10px;
@@ -66,21 +60,32 @@ div {
 	display: inline-block;
 	background-color: #444444;
 }
+
 #makeList {
 	display: inline-block;
 	text-align: center;
 }
 
-/*
-
-
-
-
-#perTeam {
-	display: inline-block;
-	vertical-align: top;
+#clearFooter {
+  clear: both;
+  height: 50px;
 }
 
-.warning {
-	color: #ffbaba;
-}*/
+#footer {
+  height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 150;
+
+}
+#test {
+  background-color: black;
+  opacity: 0.5;
+}
+
+img {
+	text-align: left;
+	height: 100px;
+	padding: 10px;
+}
