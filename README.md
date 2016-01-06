@@ -1,3 +1,7 @@
-Built my first week at Coding House, *[The Randomator](http://virsaviya.github.io/theRandomator/)* allows the user to create a list of names and to randomly choose one person from the list or to assign everyone to random teams.  
+#The Randomator  
 
-*Updated: November 26th, 2015*
+*created by: Virsaviya Efraim*  
+*created on: October 29, 2015*  
+*Updated: January 5, 2016*
+
+Built my first week at Coding House, *[The Randomator](http://virsaviya.github.io/theRandomator/)* was an exercise in DOM manipulation using vanilla JS.  It allows the user to randomly choose one person from a list of names or to assign everyone to random teams.

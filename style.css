@@ -65,27 +65,3 @@ body {
 	display: inline-block;
 	text-align: center;
 }
-
-#clearFooter {
-  clear: both;
-  height: 50px;
-}
-
-#footer {
-  height: 50px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 150;
-
-}
-#test {
-  background-color: black;
-  opacity: 0.5;
-}
-
-img {
-	text-align: left;
-	height: 100px;
-	padding: 10px;
-}
