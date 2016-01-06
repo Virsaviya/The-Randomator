@@ -1,6 +1,6 @@
 #The Randomator  
 
-*Created by: [Virsaviya Efraim](https//:twitter.com/VirsaviyaEfraim)*  
+*Created by: [Virsaviya Efraim](https://twitter.com/VirsaviyaEfraim)*  
 *Created on: October 29, 2015*  
 *Updated: January 5, 2016*
 
